@@ -1,0 +1,2 @@
+HTML --> stands for Hyper Text Markup Language is the standard Language for creating web pages. It structures content for the web, allowing 
+you to format text, images, and multimedia.HTML consists of elements and tags that organize and display content. 
