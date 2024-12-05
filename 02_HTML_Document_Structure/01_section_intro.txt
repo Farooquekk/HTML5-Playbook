@@ -1,0 +1,2 @@
+In this section, we'll cover the structure of an HTML document, including important layout elements, metadata, and various semantic 
+tags. This will help you create a well-organized, accessible, and SEO friendly web page.  
