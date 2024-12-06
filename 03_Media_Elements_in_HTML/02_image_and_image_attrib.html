@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Image Attributes</title>
+</head>
+<body>
+
+    <!-- The <img> tag is used to embed images. It has several attributes for customization: -->
+    <img src="02_img.png" alt="Description of the image" width="250" height="250">
+
+    <!-- 
+    
+    src :- It is the source URL or file PATH of the image.
+    alt :- Text Description shown if the image fails to load (imp for accessibility and SEO).
+    width and height :- Set the size of the image in pixels.
+    -->
+
+    <!-- Responsive images using srcset  -->
+
+    <!-- The srcset attribute allows the browser to choose the best image for different screen sizes or resolutions. -->
+    
+    <img src="02_img.png"
+         srcset="02_img.png 768w, 02_img.png 1200w"
+         sizes="(max-width: 768px) 100vw, 50vw"
+         alt="Pika bi Pikachu">
+         <!--
+         srcset: Defines images for various resolutions or screen widths.
+         sizes: Specifies how much space the image should occupy based on screen width.  -->
+
+         <!-- We can also use the Picture element  for this :- The picture element act as a container tag.It is used to define multiple images sources for respoonsive or optimized images. -->
+         <picture>
+            <source srcset="02_img.webp" type="image/webp"> <!-- WebP version -->
+            <source srcset="02_img.png" type="image/png"> <!-- PNG version -->
+            <img src="02_fall_back.png" alt="A fallback image"> <!-- Fallback image -->
+        </picture>
+        
+        
+    
+</body>
+</html>
