@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form validation</title>
+</head>
+<body>
+
+    <!-- Basic HTML5 Validation
+required: It Ensures that the field must be filled out before submission.
+min and max: For numeric values or date ranges.
+pattern: Defines a regular expression(regex) to match the input value. -->
+
+    <form action="/submit" method="POST" >
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="age">Age (1-100):</label>
+        <input type="number" id="age" name="age" min="1" max="100" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">Phone (e.g., +92-304-4675371):</label>
+        <input type="text" id="phone" name="phone" pattern="\+92-\d{3}-\d{7}" required>
+    
+        <button type="submit">Submit</button>
+    </form>
+    <br/>
+
+    <!-- Custom Validation
+novalidate Attribute:Disables HTML5 validation for more control via JavaScript. 
+Use JavaScript for custom error messages and handling. -->
+
+
+<form action="/submit" method="POST" novalidate>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <button type="submit">Submit</button>
+</form>
+
+
+    
+</body>
+</html>
+
+
+
+<!-- 
+
+IMP to note 
+
+The <form> tag groups input fields and sends data to a server.
+Use GET for non-sensitive data and POST for sensitive or large data.
+HTML5 validation provides basic form validation without JavaScript.
+Additional elements like <textarea> and <select> enhance interactivity.
+Use novalidate for custom JavaScript-based validation.
+
+
+
+-->
