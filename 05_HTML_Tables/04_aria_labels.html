@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria Labels for screen Readers</title>
+</head>
+<body>
+    <table aria-labelledby="tableTitle">
+        <caption id="tableTitle">Yearly Expenses</caption>
+        <thead>
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rent</td>
+                <td>$12,000</td>
+            </tr>
+            <tr>
+                <td>Utilities</td>
+                <td>$2,400</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+</body>
+</html>
+
+<!-- 
+
+Use ARIA attributes to enhance accessibility:
+aria-labelledby: Links table to a descriptive heading.
+scope: Indicates whether a <th> applies to a row, column, or group.
+-->
