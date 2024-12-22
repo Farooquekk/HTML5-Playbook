@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Attributes in HTML</title>
+</head>
+<body>
+    <div id="product" data-id="12345" data-category="electronics">
+        Product: Smartphone
+    </div>
+
+    <script>
+
+        //   Custom Attributes
+// Use attributes prefixed with data- to store custom data in HTML elements.
+// These attributes are commonly used with JavaScript for dynamic functionality.
+
+        const p1 = document.getElementById("product");
+        console.log(p1.id); // product
+        console.log(p1.dataset); // DOMStringMap
+        console.log(p1.dataset.id);//12345
+        console.log(p1.dataset.category);//electronics
+        
+
+        
+        
+    </script>
+    
+</body>
+</html>
