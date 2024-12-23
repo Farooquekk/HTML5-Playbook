@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas and SVG basics in HTML</title>
+</head>
+<body>
+    <!-- <canvas> for Graphics
+    Used for drawing 2D shapes and graphics via JavaScript. -->
+
+    <canvas id="myCanvas" width="500" height="200" style="border:1px solid #000;"></canvas>
+<script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(100, 100, 200, 50); // Draws a blue rectangle
+</script>
+
+<!-- <svg> for Scalable Vector Graphics
+    A markup-based way to create resolution-independent graphics. -->
+
+    <svg width="200" height="200">
+        <circle cx="100" cy="100" r="50" fill="blue" />
+    </svg>
+    
+
+    
+</body>
+</html>
