@@ -36,7 +36,7 @@ Your ultimate guide to mastering **HTML5** concepts, features, and best practice
 To get started with the repository, clone it to your local machine:  
 
 ```sh
-git clone https://github.com/your-username/HTML5-Playbook.git
+git clone https://github.com/Farooquekk/HTML5-Playbook.git
 ```
 
 Then, navigate into the folder and explore the files:  
